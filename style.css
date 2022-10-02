@@ -1,0 +1,97 @@
+:root {
+  --main-bg-color: #fff;
+  --orange: #ff6b0a;
+  --black: #1b1d1f;
+  --blue-gradient: linear-gradient(270deg, #a5deff 0%, #fcfeff 100%);
+}
+
+/* common */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: var(--main-bg-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/* logo */
+.logo img {
+  height: 30px;
+}
+
+.logo p {
+  width: 125px;
+  margin-left: 16px;
+}
+
+/* intro */
+#intro {
+  position: relative;
+  background: var(--blue-gradient);
+  min-height: 720px;
+}
+
+#intro .logo {
+  position: absolute;
+  top: 35px;
+}
+
+#intro .action {
+  background-color: #fff;
+  padding: 60px 56px;
+  align-self: center;
+}
+
+#intro .action p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#intro .action p.slogan {
+  color: var(--orange);
+  margin-top: 16px;
+  font-size: 24px;
+}
+
+#intro h1 {
+  margin-top: 48px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+}
+
+#intro .action p.desc {
+  font-weight: 400;
+  margin-top: 24px;
+}
+
+#intro button.accent {
+  background-color: var(--orange);
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-top: 60px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#intro img.actor {
+  margin: 0 -95px 0 24px;
+}
