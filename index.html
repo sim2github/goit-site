@@ -43,7 +43,8 @@
                               Батьківщину та
                               підтримую позитивний дух народу. Слава Україні!
                         </p>
-                        <button class="accent">Запустити гуся</button>
+                        <button class="accent"
+                                id="open-form-modal-btn">Запустити гуся</button>
                   </div>
                   <img class="actor"
                        src="img/gus.svg"
@@ -100,9 +101,9 @@
             </footer>
       </div>
 
-      <div id="modal-form"
+      <div id="modal-msg"
            class="modal flex-col-center">
-            <div class="modal-form flex-col-center">
+            <div class="modal-form-container flex-col-center">
                   <button class="modal-close">&times;</button>
                   <img src="img/trezub.svg"
                        alt="Герб України">
@@ -111,30 +112,36 @@
             </div>
       </div>
 
-      <div id="modal-msg"
-           class="modal flex-col-center">
-            <form action="/"
-                  class="modal-form flex-col-center">
+      <div id="modal-form"
+           class="modal flex-col-center modal-active">
+            <div class="modal-form-container">
                   <button class="modal-close">&times;</button>
-                  <img src="img/trezub.svg"
-                       alt="Герб України">
-                  <h3>Поділися, будь ласка, поштою</h3>
-                  <p>та запиши гуся до бандерозагону</p>
-                  <div class="form-field">
-                        <label for="name">Ім'я</label>
-                        <input type="text"
-                               name="name"
-                               id="name">
-                  </div>
-                  <div class="form-field">
-                        <label for="email">Email</label>
-                        <input type="text"
-                               name="email"
-                               id="email">
-                  </div>
-                  <button class="accent">Запустити гуся</button>
-            </form>
+
+                  <form action="#"
+                        data-netlify="true"
+                        class="modal-form flex-col-center">
+                        <img src="img/trezub.svg"
+                             alt="Герб України">
+                        <h3>Поділися, будь ласка, поштою</h3>
+                        <p>та запиши гуся до бандерозагону</p>
+                        <div class="form-field">
+                              <label for="name">Ім'я</label>
+                              <input type="text"
+                                     name="name"
+                                     id="name">
+                        </div>
+                        <div class="form-field">
+                              <label for="email">Email</label>
+                              <input type="text"
+                                     name="email"
+                                     id="email">
+                        </div>
+                        <button class="accent"
+                                id="launch-btn">Запустити гуся</button>
+                  </form>
+            </div>
       </div>
+      <script src="form.js"></script>
 </body>
 
 </html>

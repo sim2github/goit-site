@@ -211,7 +211,7 @@ h3 {
   transition: opacity 0.3 ease-in-out;
 }
 
-.modal-form {
+.modal-form-container {
   background-color: #fff;
   padding: 32px 92px 60px 92px;
   position: relative;
