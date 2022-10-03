@@ -53,41 +53,43 @@ h3 {
   line-height: 24px;
 }
 
-/* logo */
-.logo img {
-  height: 30px;
-}
-
-.logo p {
-  width: 125px;
-  margin-left: 16px;
-}
-
 /* intro */
 #intro {
-  position: relative;
   background: var(--blue-gradient);
   min-height: 720px;
 }
 
+#intro .container:first-child {
+  position: relative;
+  height: 0;
+}
+
+/* logo header */
 #intro .logo {
   position: absolute;
   top: 35px;
+  left: 0;
 }
 
 #intro .logo p {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+  width: 125px;
+  margin-left: 16px;
 }
 
+#intro .logo img {
+  height: 30px;
+}
+
+/* action */
 #intro .action {
   background-color: #fff;
   margin-top: 40px;
   padding: 60px 76px 60px 56px;
   align-self: center;
   max-height: 560px;
-  overflow: auto;
 }
 
 #intro .action p {
@@ -128,6 +130,7 @@ h3 {
   align-self: flex-end;
 }
 
+/* facts */
 #facts {
   padding: 52px 0 72px 0;
   display: flex;
@@ -152,14 +155,19 @@ h3 {
 }
 
 #facts .col {
-  padding: 0 47px;
   width: 33%;
+}
+
+#facts h3,
+#facts p {
+  padding: 0 47px;
 }
 
 #facts p {
   margin-top: 32px;
 }
 
+/* footer */
 #footer {
   width: 100%;
   background: var(--blue-gradient);
@@ -172,4 +180,23 @@ h3 {
 #footer p,
 #footer h2 {
   text-align: center;
+}
+
+/* media */
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 1000px;
+  }
+
+  #intro {
+    min-height: auto;
+  }
+
+  #intro .action {
+    padding: 40px;
+  }
+
+  #intro img.actor {
+    margin: 0 0 0 24px;
+  }
 }
