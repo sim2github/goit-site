@@ -90,7 +90,8 @@
       </div>
       <!-- footer -->
       <div class="container">
-            <footer id="footer">
+            <footer id="footer"
+                    class="flex-col-center">
                   <img src="img/trezub.svg"
                        alt="Герб України">
                   <h2>Перемога завжди за нами!</h2>
@@ -99,6 +100,41 @@
             </footer>
       </div>
 
+      <div id="modal-form"
+           class="modal flex-col-center">
+            <div class="modal-form flex-col-center">
+                  <button class="modal-close">&times;</button>
+                  <img src="img/trezub.svg"
+                       alt="Герб України">
+                  <h3>Дякуємо, гусь успішно запущений</h3>
+                  <p class="last">Слава Україні! Героям Слава!</p>
+            </div>
+      </div>
+
+      <div id="modal-msg"
+           class="modal flex-col-center">
+            <form action="/"
+                  class="modal-form flex-col-center">
+                  <button class="modal-close">&times;</button>
+                  <img src="img/trezub.svg"
+                       alt="Герб України">
+                  <h3>Поділися, будь ласка, поштою</h3>
+                  <p>та запиши гуся до бандерозагону</p>
+                  <div class="form-field">
+                        <label for="name">Ім'я</label>
+                        <input type="text"
+                               name="name"
+                               id="name">
+                  </div>
+                  <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="text"
+                               name="email"
+                               id="email">
+                  </div>
+                  <button class="accent">Запустити гуся</button>
+            </form>
+      </div>
 </body>
 
 </html>
