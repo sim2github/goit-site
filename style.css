@@ -13,6 +13,7 @@ body {
   line-height: 24px;
   color: var(--black);
   background-color: var(--main-bg-color);
+  margin-bottom: 72px;
 }
 
 * {
@@ -145,6 +146,7 @@ h3 {
 }
 
 #facts .row {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -156,4 +158,18 @@ h3 {
 
 #facts p {
   margin-top: 32px;
+}
+
+#footer {
+  width: 100%;
+  background: var(--blue-gradient);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 72px 148px;
+}
+
+#footer p,
+#footer h2 {
+  text-align: center;
 }
