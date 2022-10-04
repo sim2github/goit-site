@@ -41,15 +41,11 @@ function clearFormFields() {
 }
 
 function showGooseAnim() {
-    const targetContainer = document.querySelector('.modal-form');
-    const gusImage = document.createElement('img');
-    gusImage.setAttribute('src', './img/gus-anim.gif');
-    gusImage.classList.add('gus-anim');
-
-    targetContainer.appendChild(gusImage);
+    const gooseImage = document.getElementById('goose-img');
+    gooseImage.classList.replace('goose-hidden','goose-anim');
 
     setTimeout(2000, () => {
-        targetContainer.removeChild(gusImage);
+    gooseImage.classList.replace('goose-anim','goose-hidden');
     })
 }
 

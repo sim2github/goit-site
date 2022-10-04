@@ -81,7 +81,16 @@ h3 {
 }
 
 /* animation */
-.gus-anim {
+.goose-hidden {
+  opacity: 0;
+  display: none;
+  pointer-events: none;
+  transition: opacity 0.3 ease-in-out;
+}
+
+.goose-anim {
+  opacity: 1;
+  display: block;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -89,7 +98,6 @@ h3 {
   margin-top: auto;
   width: 100%;
   z-index: 2;
-  pointer-events: none;
 }
 
 /* intro */
